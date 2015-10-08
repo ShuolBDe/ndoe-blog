@@ -16,7 +16,7 @@
     
 --20151008更
 
-    1、添加了两个新组建（markdown-文章编辑工具、multer-文件上传）
+    1、添加了两个新组件（markdown-文章编辑工具、multer-文件上传）
     
     2、notice：req.params和req.body的区别：前者是url上的参数，后者是提交表单中含有的参数
     
