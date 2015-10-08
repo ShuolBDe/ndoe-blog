@@ -14,6 +14,14 @@ var app = express();
 
 var session = require('express-session');
 var MongoStore = require('connect-mongo')(session);
+var multer = require('multer');
+
+app.use(multer({
+  dest: './public/images',
+  rename: function(fieldname, filename){
+    return filename;
+  }
+}));
 
 app.use(session({
   secret: settings.cookieSecret,
